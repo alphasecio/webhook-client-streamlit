@@ -2,8 +2,8 @@ import requests
 import streamlit as st
 
 st.title("Webhook Client")
-url = st.text_input("Webhook URL", "")
-payload = st.text_input("JSON Payload", "")
+url = st.text_input("Webhook URL", "https://webhook-server.com/webhook-1")
+payload = st.text_input("JSON Payload", "{}")
 
 if st.button("Submit"):
     if not url.strip() == "":
